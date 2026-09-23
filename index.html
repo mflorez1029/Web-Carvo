@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--meta datos general-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--meta datos SEO-->
+    <meta name="description" content="barra de navegaion, crear barra de navegacion,conoce mi proyecto barra de navegacion, aprernde a crear barras de navegacion, html, java script">
+    <meta name="author" content="index, follow">
+    <meta name="robots" content="">
+    
+
+    <!--meta etiquetas para compartir enlaces en redes sociales-->
+    <meta property="og:title" content="Mi página">
+    <meta property="og:description" content="Descripción">
+    <meta property="og:image" content="imagen.jpg">
+    <meta property="og:url" content="https://misitio.com">
+
+    <!--favicon-->
+    <link rel="icon" type="image/png" sizes="32x32" href="img-carvo/favi.png">
+
+    <!-- ayuda a los motores de busqueda a centrarce a que es una sola pagina web -->
+    <link rel="canonical" href="file:///C:/xampp/htdocs/CARVO/index.html">
+
+
+    <!--CSS-->
+    <link rel="stylesheet" href="codigo_carvos.css">
+
+    <!--titulo de la barra-->
+    <title>Accesorios | Para Tu Camino | Tapetes</title>
+
+    
+
+</head>
+<body>
+    <header>
+        <div class="barra-informacion">
+        <p>3154410214</p>
+        <div class="img-1">
+        <a href=""><img src="img-carvo/facebook.png" alt="" ></a>
+        </div>
+        <div class="img-2">
+        <a href=""><img src="img-carvo/insagran.png" alt=""></a>
+        </div>
+        </div>
+
+        <div class="contenedor-principal">
+        
+        <div class="logo-principal">
+        <a href="#"><img src="img-carvo/Carvo2.png" alt=""></a>
+        </div>
+
+        <nav>
+            <div class="barra-navegacion">
+            <ul class="menu">
+                <li><a href="">HOME</a></li>
+                <li><a href="">TAPETES POR MARCA</a>
+                    <ul>
+                        <li><a href="">AUDI</a></li>
+                        <li><a href="">TOYOTA</a></li>
+                        <li><a href="">NISSAN</a></li>
+                        <li><a href="">CHERY</a></li>
+                        <li><a href="">BYD</a></li>
+                        <li><a href="">MAZDA</a></li>
+                        <li><a href="">CHEVROLET</a></li>
+                        <li><a href="">RENOULT</a></li>
+                        <li><a href="">FORD</a></li>
+                        <li><a href="">SANYONG</a></li>
+                                            
+                    </ul>
+                
+                
+                
+                </li>
+                <li><a href="">TAPETES POR MATERIAL</a>
+                    <ul>
+                        <li><a href="">CAUCHO</a></li>
+                        <li><a href="">TERMOSTATO</a></li>
+                        <li><a href="">POLIESTER</a></li>
+                        <li><a href="">POLITEX</a></li>
+                        <li><a href="">TELA</a></li>
+
+
+
+
+                    </ul>
+                
+                
+                
+                </li>
+                <li><a href="">PRODUCTOS</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">CONTACTANOS</a></li>
+                
+            </ul>
+            
+            </div>
+            
+            <div class="buscador-text">
+            <form action="buscador">
+
+                <input type="text" placeholder="Buscar">
+                <button type="submit">Buscar</button>
+
+
+            </form>
+            </div>
+            
+            
+            
+        </nav>
+        </div>
+
+
+    </header>
+    <main>
+        <section>
+            
+            <div id="banner-principal">
+            <img src="img-carvo/banner-web.jpg" alt="">
+            </div>
+
+        </section>
+
+        <section>
+            <div id="contenedor-articulo">
+            <div class="articulo-1">
+            <h1>TAPETES SOBRE MEDIDA</h1>
+            <H3>PARA TODAS LAS MARCAS</H3>
+            <a href=""><P>conoce nuestros tapetes</P></a>
+            <div class="img-play">
+            <a href=""><img src="img-carvo/icons8-reproducir-en-círculo-30.png" alt=""></a>
+            </div>
+            </div>
+
+            <div class="articulo-2">
+            <h1>¿QUIERES VER COMO<br>QUEDA TU CARRO?</h1>
+            <P>selecciona la marca de tu carro</P><br>
+
+            <div class="desplegable">
+            <select name="" id="opcion">
+                <option value="Elige tu Marca">Elige tu Marca</option>
+                <option value="Audi">AUDI</option>
+                <option value="Toyota">TOYOTA</option>
+                <option value="Nissan">NISSAN</option>
+                <option value="Chery">CHERY</option>
+                <option value="Byd">BYD</option>
+                <option value="Mazda">MAZDA</option>
+                <option value="Chevrolet">CHEVROLET</option>
+                <option value="Renoult">RENOULT</option>
+                <option value="Ford">FORD</option>
+                <option value="Sanyong">SANYONG</option>
+               
+
+            </select>
+
+            <button onclick="mostrarOpcion()">Ver Tapete ></button>
+        
+            </div>
+            
+            <p id="resultado"></p>
+            
+
+
+            
+
+
+            </div>
+            </div>
+            
+
+        </section>
+
+        <section>
+            
+            <div id="whatsapp-container">
+            
+            <div class="logo-1">
+            <a href=""><img src="img-carvo/whatsapp1.png" alt=""></a>
+            </div>
+            
+            <div class="parrafo-1">
+            <h1>¿PREFIERES ATENCION PERSONALIZADA?</h1>
+            <H3>Escribenos por whatsapp<br> y te yudamos en todo lo que necesites.</H3>
+            </div>
+            
+            <div class="rayo-parrafo">
+            <a href=""><img src="img-carvo/icons8-rayo-50.png" alt=""></a>
+            <p>Respueta Rapida</p>
+            </div>
+            
+            <div class="audifonos-parrafo">
+            <a href=""><img src="img-carvo/icons8-auriculares-50.png" alt=""></a>
+            <p>Asesoria Personalizada</p>
+            </div>
+            
+            <div class="logo-2">
+            <a href=""><img src="img-carvo/what.png" alt=""></a>
+            </div>
+            
+        </div>
+            
+
+
+
+
+        </section>
+    </main>
+    
+
+<script> 
+
+function mostrarOpcion() 
+{ const seleccion = document.getElementById("opcion").value; 
+if (seleccion === "") { document.getElementById("resultado").textContent = "Selecciona una opción primero."; return; } 
+document.getElementById("resultado").textContent = "Seleccionaste: " + seleccion; } </script>
+
+
+
+
+</body>
+
+
+
+</html>
