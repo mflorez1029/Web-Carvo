@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+/* Oculta cualquier cosa que se salga por la derecha o izquierda */
+
+body, html {
+    overflow-x: hidden; 
+    margin: 0;
+    padding: 0;
+}
+
 /* logo-principal..........................................*/
 
 .logo-principal img{
@@ -24,8 +32,6 @@
     color: white;
     gap: 8px;
     
-    
-
 }
 
 .barra-informacion img{
@@ -58,7 +64,7 @@
 }
 
 
-/* contenedor principal............................*/
+/* Barra logo y Barra de navegacion............................*/
 
 .contenedor-principal{
     display: flex;
@@ -67,20 +73,14 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
     
-
 }
-
-/* barra de navegacion ..............................*/
-
 
 .barra-navegacion ul{
     display: flex;
     margin-left: 60px;
     gap: 30px;
-     list-style: none;
-    
-
-}
+    list-style: none;
+    }
 
 .barra-navegacion a{
     
@@ -89,7 +89,6 @@
     padding: 3PX;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
-
 }
 
 .barra-navegacion a:hover{
@@ -138,26 +137,27 @@
     position: relative;
     top: -24px;
     
-    
-
-    
 }
 
 .buscador-text input{
   height: 30px;
-  border-radius: 10px 0px 0px 10px;
   outline: none;
   border: none;
   width: 240px;
-  box-shadow: inset  0 0 10px rgb(128, 128, 128);
-  
-  
-  color: white;
+  color: rgb(13, 11, 11);
   font-size: 16px;
+  border-bottom: 1px solid #333;
 }
 
+.buscador-text input:hover{
+    border-bottom: 1px solid #c1c71f;
+
+}
+
+
+
 .buscador-text button{
-    background-color: rgb(0, 0, 0, 40%);
+    background-color: rgb(0, 0, 0, 10%);
     cursor: pointer;
     border-radius: 0px 10px 10px 0px;
     outline: none;
@@ -236,7 +236,7 @@
     }
 }
 
-/* banner principal - main 1 ..........................*/
+/* section 1 - logo principal banner publicitario..........................*/
 
 #banner-principal img{
     width: 100%;
@@ -247,7 +247,7 @@
 }
 
 
-/* articulos - main 2 ..................................*/
+/* section 2 - Parrafos y buscador..................................*/
 
 #contenedor-articulo{
     display: flex;
@@ -352,7 +352,7 @@
 .desplegable select{
     outline: none;
     border: none;
-    box-shadow: inset  0 0 10px rgb(128, 128, 128);
+    box-shadow: 0 0 10px rgb(128, 128, 128);
     border-radius: 5px;
     cursor: pointer;
 }
@@ -366,18 +366,6 @@
     color: white;
 
 }
-
-
-
-
-
-
-    
-
-
-
-
-
 
 
 @media (max-width: 768px) {
@@ -442,37 +430,119 @@
     
 }
 
-/* asesoria personalizada*/
+/* section 3 - publicidad del whatsapp..............................*/
 
 #whatsapp-container{
     display: flex;
     align-items: center;
-    
-    background-color: rgb(39, 156, 179);
+    padding-bottom: 90px;
+    justify-content: center;
+    box-shadow: 0 0 20px rgb(128, 128, 128, 30%);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 60px;
     height: 400px;
+    margin: 0 150px 0 150px;
+    border-radius: 30px;
+    
+   
+    
 
 }
 
 .logo-1 img{
     width: 150px;
+    position: relative;
+    left: 200px;
 
 }
 
 .logo-2 img{
     width: 350px;
+    position: relative;
+    right: 200px;
 }
 
 
 .parrafo-1{
     position: relative;
-    left: 120px;
+    left: 250px;
+
 
 }
 
 .rayo-parrafo{
     position: relative;
     top: 150px;
-    right: 150px;
+    right: 180px;
+    white-space: nowrap;
+    font-size: 30px;
+    
+    
+}
+
+.audifonos-parrafo{
+    position: relative;
+    top: 150px;
+    white-space: nowrap;
+    font-size: 30px;
+    right: 120px;
+}
+
+.rayo-parrafo a{
+    text-decoration: none;
+    color: black;
+}
+
+.audifonos-parrafo a{
+    text-decoration: none;
+    color: black;
+}
+
+.audifonos-parrafo img{
+    position: relative;
+    left: 95px;
+}
+
+.rayo-parrafo img{
+    position: relative;
+    left: 75px;
+}
+
+.parrafo-1 h3{
+    white-space: nowrap;
+    font-size: 24px;
+    color: grey;
+}
+
+.parrafo-1 h1{
+    white-space: nowrap;
+    
+}
+
+/* section 4 - video publicitario........................................ */
+
+#video-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(128, 128, 128, 10%);
+    padding: 30px;
+    margin: 80px 30px 20px 30px ;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(128, 128, 128, 70%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.video-pricipal {
+    border-radius: 30px;
+    overflow: hidden;
+
+}
+
+.texto-principal h1{
+    position: relative;
+    left: 40px;
+}
+
+.texto-principal h3{
+    color: grey;
 }
